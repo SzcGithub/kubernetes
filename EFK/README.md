@@ -39,8 +39,7 @@ http://主机IP:8086/api/v1/proxy/namespaces/kube-system/services/kibana-logging
 修改/etc/sysconfig/docker配置文件，把原来的journal改回到当前json.log方式
 
 ~~~
-#OPTIONS='--selinux-enabled --log-driver=journald --signature-verification=false  --insecure-registry 192.168.30.11:5000'
-OPTIONS='--selinux-enabled --log-driver=json-file --signature-verification=false  --insecure-registry 192.168.30.11:5000'
-
+#OPTIONS='--selinux-enabled --log-driver=journald --signature-verification=false 
+OPTIONS='--selinux-enabled --log-driver=json-file --signature-verification=false  
 ~~~
 
